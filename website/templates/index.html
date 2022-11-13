@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200&family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    background-color: #1E1E1E;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer_box {
+  background-color: #112132;
+  width: 880px;
+  height: 620px;
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: 0 0px 45px rgba(0,0,0,0.42);
+  display: flex;
+  flex-direction: column;
+} 
+
+
+
+
+.boxes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  grid-template-rows: auto auto 1fr 1fr 1fr auto auto;
+  margin-top: 20px;
+
+}
+
+.box1{
+
+  background-color: #3A5067;
+  width: 200px;
+  height: 70px;
+  padding: 35px 40px;
+  border-radius: 30px;
+  box-shadow: 0 0px 45px rgba(0,0,0,0.42),
+            inset 9px 9px 18px #1e2935,
+            inset -9px -9px 18px #567799;
+}
+
+
+.box2{
+  background-color: #3A5067;
+  width: 200px;
+  height: 70px;
+  padding: 35px 40px;
+  border-radius: 30px;
+  box-shadow: 0 0px 45px rgba(0,0,0,0.42),
+            inset 9px 9px 18px #1e2935,
+            inset -9px -9px 18px #567799;
+}
+
+.box3{
+  background-color: #3A5067;
+  width: 200px;
+  height: 200px;
+  padding: 35px 40px;
+  border-radius: 30px;
+  box-shadow: 0 0px 45px rgba(0,0,0,0.42),
+            inset 9px 9px 18px #1e2935,
+            inset -9px -9px 18px #567799;
+}
+
+.title{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  margin-left: 17px;
+  text-shadow: 0px 0px 30px rgb(255, 255, 255, 0.6);
+}
+
+.boxtitles {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+  text-shadow: 0px 0px 30px rgb(255, 255, 255, 1);
+}
+
+.box-under-titles {
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  text-shadow: 0px 0px 30px rgb(255, 255, 255, 0.1);
+}
+
+.box-under-titles-BMI {
+  padding-top: 100px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  text-shadow: 0px 0px 30px rgb(255, 255, 255, 0.1);
+}
+
+
+.neon-box{
+  grid-column-end: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25BC93;
+  width: 280px;
+  height: 51px;
+  margin-top: -130px;
+  border-radius: 30px;
+  -webkit-box-shadow:0px 0px 26px 0px rgba(37,188,148,0.9);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(37,188,148,0.9);
+
+}
+
+.neon-box2{
+  grid-column-end: 2; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25BC93;
+  width: 280px;
+  height: 51px;
+  margin-top: -130px;
+  border-radius: 30px;
+  -webkit-box-shadow:0px 0px 26px 0px rgba(37,188,148,0.9);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(37,188,148,0.9);
+
+}
+
+.neon-box3{
+  grid-column-end: 3; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25BC93;
+  width: 280px;
+  height: 51px;
+  border-radius: 30px;
+  -webkit-box-shadow:0px 0px 26px 0px rgba(37,188,148,0.9);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(37,188,148,0.9);
+
+}
+
+.neon-box4{
+  grid-column-end: 3; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25BC93;
+  width: 280px;
+  height: 51px;
+  border-radius: 30px;
+  -webkit-box-shadow:0px 0px 26px 0px rgba(37,188,148,0.9);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(37,188,148,0.9);
+
+}
+
+
+
+
+.box-in-titles{
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0px 0px 30px rgb(255, 255, 255, 0.1);
+}
+
+.bmi-info {
+  margin-top: 60px;
+}
+
+p {
+  margin: 0;
+}
+
+input[type=text] {
+  width: 100%;
+  padding-top: 7px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #25BC93;
+  width: 280px;
+  height: 51px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  -webkit-box-shadow:0px 0px 26px 0px rgba(37,188,148,0.9);
+  -moz-box-shadow: 0px 0px 26px 0px rgba(37,188,148,0.9);
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<div class="outer_box">
+  <div class="title"><p>FitFact</p></div>
+
+
+<div class="boxes">
+
+  <div class="box1">
+    <div class="boxtitles">
+    {% for message in get_flashed_messages() %}
+      <p> {{message}} </p>
+    {% endfor %}
+
+
+    </div>
+    <div class="box-under-titles"><p>Sammu</p></div>
+  </div>
+
+  <div class="box2">
+    <div class="boxtitles"><p>1230</p></div>
+    <div class="box-under-titles"><p>Kilokalorit</p></div>
+  </div>
+  <div class="box3">
+    <div class="boxtitles"><p>1230</p></div>
+    <div class="box-under-titles"><p>Hetkene BMI</p></div>
+      <div class="box-under-titles-BMI"><p>Teie kehamassiindeks <br> on <strong>normaalne</strong></p></div>
+  </div>
+
+  <form action="sammud" method="post">
+    <input type="text" name="sammud" placeholder="Sisesta sammud...">
+  </form>
+
+
+
+    <!-- <div class="neon-box">
+    <div class="box-in-titles"><p>Sisesta sammud</p></div>
+    </div> -->
+    <!-- <div class="neon-box2">
+      <div class="box-in-titles"><p>Sisesta kilokalorid</p></div>
+    </div>
+    <div class="neon-box3">
+      <div class="box-in-titles"><p>Sisesta pikkus (cm)</p></div>
+    </div>
+    <div class="neon-box3">
+      <div class="box-in-titles"><p>Sisesta kaal (kg)</p></div>
+    </div>
+    <div class="neon-box4">
+      <div class="box-in-titles"><p><strong>Arvuta</strong></p></div>
+    </div> -->
+  </div>
+</div>
+
+
+  
+
+
+
+
+</div>
+
+
+</body>
+</html>
